@@ -231,6 +231,14 @@ export function RoutesConfig ($stateProvider, $urlRouterProvider) {
         permissionId: null
       }
     })
+    .state('app.create_post', {
+      url: '/create-post',
+      views: {
+        'main@app': {
+          templateUrl: getView('create_post')
+        }
+      }
+    })
     .state('app.userrolesadd', {
       url: '/user-roles-add',
       data: {
@@ -369,4 +377,5 @@ export function RoutesConfig ($stateProvider, $urlRouterProvider) {
         }
       }
     })
+
 }

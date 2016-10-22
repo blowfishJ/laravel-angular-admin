@@ -95920,6 +95920,275 @@ try {
   module = angular.module('app.partials', []);
 }
 module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('./views/app/pages/create_post/create_post.page.html',
+    '\n' +
+    '<create-post-form></create-post-form>\n' +
+    '\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('app.partials');
+} catch (e) {
+  module = angular.module('app.partials', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('./views/app/pages/footer/footer.page.html',
+    '<footer class="main-footer">\n' +
+    '  <div class="pull-right hidden-xs">\n' +
+    '    <b>Version</b> 2.3.3\n' +
+    '  </div>\n' +
+    '  <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.\n' +
+    '</footer>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('app.partials');
+} catch (e) {
+  module = angular.module('app.partials', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('./views/app/pages/forgot-password/forgot-password.page.html',
+    '<div class="login-box">\n' +
+    '  <div class="login-logo">\n' +
+    '    <a ui-sref="login"><b>Admin</b>LTE</a>\n' +
+    '  </div>\n' +
+    '  <div class="login-box-body">\n' +
+    '    <div class="row">\n' +
+    '      <div class="col-xs-12">\n' +
+    '        <div class="text-center">\n' +
+    '          <h3>Forgot your password?</h3>\n' +
+    '        </div>\n' +
+    '      </div>\n' +
+    '    </div>\n' +
+    '    <div class="row">\n' +
+    '      <div class="col-xs-12">\n' +
+    '        <forgot-password></forgot-password>\n' +
+    '      </div>\n' +
+    '    </div>\n' +
+    '    <br>\n' +
+    '    <div class="row">\n' +
+    '      <div class="col-xs-12">\n' +
+    '        <a ui-sref="login">Back to Login Page</a>\n' +
+    '      </div>\n' +
+    '    </div>\n' +
+    '  </div>\n' +
+    '</div>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('app.partials');
+} catch (e) {
+  module = angular.module('app.partials', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('./views/app/pages/header/header.page.html',
+    '<nav-header></nav-header>\n' +
+    '<nav-sidebar></nav-sidebar>');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('app.partials');
+} catch (e) {
+  module = angular.module('app.partials', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('./views/app/pages/landing/landing.page.html',
+    '<section class="content-header">\n' +
+    '  <h1>\n' +
+    '    Dashboard\n' +
+    '    <small>Version 2.0</small>\n' +
+    '  </h1>\n' +
+    '  <ol class="breadcrumb">\n' +
+    '    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>\n' +
+    '    <li class="active">Dashboard</li>\n' +
+    '  </ol>\n' +
+    '</section>\n' +
+    '<dashboard></dashboard>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('app.partials');
+} catch (e) {
+  module = angular.module('app.partials', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('./views/app/pages/layout/layout.page.html',
+    '<div ui-view="header"></div>\n' +
+    '<div class="content-wrapper">\n' +
+    '    <div ui-view="main"></div>\n' +
+    '</div>\n' +
+    '<div ui-view="footer"></div>');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('app.partials');
+} catch (e) {
+  module = angular.module('app.partials', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('./views/app/pages/login/login.page.html',
+    '<div class="login-box">\n' +
+    '  <div class="login-logo">\n' +
+    '    <a ui-sref="login"><b>Admin</b>LTE</a>\n' +
+    '  </div>\n' +
+    '  <div class="login-box-body">\n' +
+    '    <div class="row">\n' +
+    '      <div class="col-xs-12">\n' +
+    '        <div class="text-center">\n' +
+    '          <h3>Sign in</h3>\n' +
+    '        </div>\n' +
+    '      </div>\n' +
+    '    </div>\n' +
+    '    <div class="row">\n' +
+    '      <div class="col-xs-12">\n' +
+    '        <login-form></login-form>\n' +
+    '      </div>\n' +
+    '    </div>\n' +
+    '  </div>\n' +
+    '</div>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('app.partials');
+} catch (e) {
+  module = angular.module('app.partials', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('./views/app/pages/login-loader/login-loader.page.html',
+    '<div class="login-box">\n' +
+    '  <div class="login-logo">\n' +
+    '    <a ui-sref="login"><b>Admin</b>LTE</a>\n' +
+    '  </div>\n' +
+    '  <div class="login-box-body">\n' +
+    '    <login-loader></login-loader>\n' +
+    '  </div>\n' +
+    '</div>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('app.partials');
+} catch (e) {
+  module = angular.module('app.partials', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('./views/app/pages/register/register.page.html',
+    '<div class="register-box">\n' +
+    '  <div class="register-logo">\n' +
+    '    <a ui-sref="login"><b>Admin</b>LTE</a>\n' +
+    '  </div>\n' +
+    '  <div class="register-box-body">\n' +
+    '    <div class="row">\n' +
+    '      <div class="col-xs-12">\n' +
+    '        <div class="text-center">\n' +
+    '          <h3>Create a new account</h3>\n' +
+    '        </div>\n' +
+    '      </div>\n' +
+    '    </div>\n' +
+    '    <div class="row">\n' +
+    '      <div class="col-xs-12">\n' +
+    '        <register-form></register-form>\n' +
+    '      </div>\n' +
+    '    </div>\n' +
+    '    <br>\n' +
+    '    <div class="row">\n' +
+    '      <div class="col-xs-12">\n' +
+    '        <div class="text-center">\n' +
+    '          <a ui-sref="login">I already have an account</a>\n' +
+    '        </div>\n' +
+    '      </div>\n' +
+    '    </div>\n' +
+    '    <br>\n' +
+    '    <div class="row">\n' +
+    '      <div class="col-xs-12">\n' +
+    '        By signing up, you agree to our <a href="#">Terms</a> and that you have read our <a href="#">Privacy Policy</a>.\n' +
+    '      </div>\n' +
+    '    </div>\n' +
+    '  </div>\n' +
+    '</div>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('app.partials');
+} catch (e) {
+  module = angular.module('app.partials', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('./views/app/pages/reset-password/reset-password.page.html',
+    '<div class="login-box">\n' +
+    '  <div class="login-logo">\n' +
+    '    <a ui-sref="login"><b>Admin</b>LTE</a>\n' +
+    '  </div>\n' +
+    '  <div class="login-box-body">\n' +
+    '    <div class="row-">\n' +
+    '      <div class="col-xs-12">\n' +
+    '        <div class="text-center">\n' +
+    '          <h3>Reset Password</h3>\n' +
+    '        </div>\n' +
+    '      </div>\n' +
+    '    </div>\n' +
+    '    <div class="row">\n' +
+    '      <div class="col-xs-12">\n' +
+    '        <reset-password></reset-password>\n' +
+    '      </div>\n' +
+    '    </div>\n' +
+    '  </div>\n' +
+    '</div>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('app.partials');
+} catch (e) {
+  module = angular.module('app.partials', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('./views/app/pages/user-verification/user-verification.page.html',
+    '<div class="login-box">\n' +
+    '  <div class="login-logo">\n' +
+    '    <a ui-sref="login"><b>Admin</b>LTE</a>\n' +
+    '  </div>\n' +
+    '  <div class="login-box-body">\n' +
+    '    <user-verification></user-verification>\n' +
+    '  </div>\n' +
+    '</div>\n' +
+    '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('app.partials');
+} catch (e) {
+  module = angular.module('app.partials', []);
+}
+module.run(['$templateCache', function($templateCache) {
   $templateCache.put('./views/app/components/charts-chartjs/charts-chartjs.component.html',
     '<section class="content-header">\n' +
     '  <h1>ChartJS<small>Preview sample</small></h1>\n' +
@@ -96075,6 +96344,51 @@ module.run(['$templateCache', function($templateCache) {
     '  </div>\n' +
     '</section>\n' +
     '');
+}]);
+})();
+
+(function(module) {
+try {
+  module = angular.module('app.partials');
+} catch (e) {
+  module = angular.module('app.partials', []);
+}
+module.run(['$templateCache', function($templateCache) {
+  $templateCache.put('./views/app/components/create_post_form/create_post_form.component.html',
+    '<section class="content-header">\n' +
+    '  <h1>Post <small>Module description here</small></h1>\n' +
+    '  <ol class="breadcrumb">\n' +
+    '    <li><a ui-sref="app.landing"><i class="fa fa-dashboard"></i> Home</a></li>\n' +
+    '    <li class="active">Post create</li>\n' +
+    '  </ol>\n' +
+    '</section>\n' +
+    '\n' +
+    '<section class="content-header">\n' +
+    '  <h1>Users <small>Module description here</small></h1>\n' +
+    '  <ol class="breadcrumb">\n' +
+    '    <li><a ui-sref="app.landing"><i class="fa fa-dashboard"></i> Home</a></li>\n' +
+    '    <li class="active">User Lists</li>\n' +
+    '  </ol>\n' +
+    '</section>\n' +
+    '\n' +
+    '<section class="content">\n' +
+    '  <div class="row">\n' +
+    '    <div class="col-md-12">\n' +
+    '      <div class="box box-info">\n' +
+    '        <div class="box-header with-border">\n' +
+    '          <h3 class="box-title">Criar posts</h3>\n' +
+    '          <div class="box-tools pull-right">\n' +
+    '            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>\n' +
+    '            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>\n' +
+    '          </div>\n' +
+    '        </div>\n' +
+    '        <div class="box-body">\n' +
+    '         	<h1>Tela criar posts</h1>\n' +
+    '        </div>\n' +
+    '      </div>\n' +
+    '    </div>\n' +
+    '  </div>\n' +
+    '</section>');
 }]);
 })();
 
@@ -97414,6 +97728,14 @@ module.run(['$templateCache', function($templateCache) {
     '        <a ui-sref=\'app.landing\'>\n' +
     '          <i class="fa fa-dashboard"></i> <span>Dashboard</span>\n' +
     '        </a>\n' +
+    '      </li>\n' +
+    '      <li class="treeview">\n' +
+    '        <a  href="javascript:void(0)">\n' +
+    '          <i class="fa fa-cog"></i> <span>Posts</span> <i class="fa fa-angle-left pull-right"></i>\n' +
+    '        </a>\n' +
+    '        <ul class="treeview-menu">\n' +
+    '          <li><a ui-sref=\'app.create_post\'><i class="fa fa-circle-o"></i> <span>Create Post</span></a></li>\n' +
+    '        </ul>\n' +
     '      </li>\n' +
     '      <li class="treeview" ng-show="vm.can(\'manage.users\')">\n' +
     '        <a href="javascript:void(0)">\n' +
@@ -103050,260 +103372,6 @@ module.run(['$templateCache', function($templateCache) {
 }]);
 })();
 
-(function(module) {
-try {
-  module = angular.module('app.partials');
-} catch (e) {
-  module = angular.module('app.partials', []);
-}
-module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('./views/app/pages/footer/footer.page.html',
-    '<footer class="main-footer">\n' +
-    '  <div class="pull-right hidden-xs">\n' +
-    '    <b>Version</b> 2.3.3\n' +
-    '  </div>\n' +
-    '  <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.\n' +
-    '</footer>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('app.partials');
-} catch (e) {
-  module = angular.module('app.partials', []);
-}
-module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('./views/app/pages/forgot-password/forgot-password.page.html',
-    '<div class="login-box">\n' +
-    '  <div class="login-logo">\n' +
-    '    <a ui-sref="login"><b>Admin</b>LTE</a>\n' +
-    '  </div>\n' +
-    '  <div class="login-box-body">\n' +
-    '    <div class="row">\n' +
-    '      <div class="col-xs-12">\n' +
-    '        <div class="text-center">\n' +
-    '          <h3>Forgot your password?</h3>\n' +
-    '        </div>\n' +
-    '      </div>\n' +
-    '    </div>\n' +
-    '    <div class="row">\n' +
-    '      <div class="col-xs-12">\n' +
-    '        <forgot-password></forgot-password>\n' +
-    '      </div>\n' +
-    '    </div>\n' +
-    '    <br>\n' +
-    '    <div class="row">\n' +
-    '      <div class="col-xs-12">\n' +
-    '        <a ui-sref="login">Back to Login Page</a>\n' +
-    '      </div>\n' +
-    '    </div>\n' +
-    '  </div>\n' +
-    '</div>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('app.partials');
-} catch (e) {
-  module = angular.module('app.partials', []);
-}
-module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('./views/app/pages/header/header.page.html',
-    '<nav-header></nav-header>\n' +
-    '<nav-sidebar></nav-sidebar>');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('app.partials');
-} catch (e) {
-  module = angular.module('app.partials', []);
-}
-module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('./views/app/pages/landing/landing.page.html',
-    '<section class="content-header">\n' +
-    '  <h1>\n' +
-    '    Dashboard\n' +
-    '    <small>Version 2.0</small>\n' +
-    '  </h1>\n' +
-    '  <ol class="breadcrumb">\n' +
-    '    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>\n' +
-    '    <li class="active">Dashboard</li>\n' +
-    '  </ol>\n' +
-    '</section>\n' +
-    '<dashboard></dashboard>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('app.partials');
-} catch (e) {
-  module = angular.module('app.partials', []);
-}
-module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('./views/app/pages/layout/layout.page.html',
-    '<div ui-view="header"></div>\n' +
-    '<div class="content-wrapper">\n' +
-    '    <div ui-view="main"></div>\n' +
-    '</div>\n' +
-    '<div ui-view="footer"></div>');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('app.partials');
-} catch (e) {
-  module = angular.module('app.partials', []);
-}
-module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('./views/app/pages/login/login.page.html',
-    '<div class="login-box">\n' +
-    '  <div class="login-logo">\n' +
-    '    <a ui-sref="login"><b>Admin</b>LTE</a>\n' +
-    '  </div>\n' +
-    '  <div class="login-box-body">\n' +
-    '    <div class="row">\n' +
-    '      <div class="col-xs-12">\n' +
-    '        <div class="text-center">\n' +
-    '          <h3>Sign in</h3>\n' +
-    '        </div>\n' +
-    '      </div>\n' +
-    '    </div>\n' +
-    '    <div class="row">\n' +
-    '      <div class="col-xs-12">\n' +
-    '        <login-form></login-form>\n' +
-    '      </div>\n' +
-    '    </div>\n' +
-    '  </div>\n' +
-    '</div>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('app.partials');
-} catch (e) {
-  module = angular.module('app.partials', []);
-}
-module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('./views/app/pages/login-loader/login-loader.page.html',
-    '<div class="login-box">\n' +
-    '  <div class="login-logo">\n' +
-    '    <a ui-sref="login"><b>Admin</b>LTE</a>\n' +
-    '  </div>\n' +
-    '  <div class="login-box-body">\n' +
-    '    <login-loader></login-loader>\n' +
-    '  </div>\n' +
-    '</div>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('app.partials');
-} catch (e) {
-  module = angular.module('app.partials', []);
-}
-module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('./views/app/pages/register/register.page.html',
-    '<div class="register-box">\n' +
-    '  <div class="register-logo">\n' +
-    '    <a ui-sref="login"><b>Admin</b>LTE</a>\n' +
-    '  </div>\n' +
-    '  <div class="register-box-body">\n' +
-    '    <div class="row">\n' +
-    '      <div class="col-xs-12">\n' +
-    '        <div class="text-center">\n' +
-    '          <h3>Create a new account</h3>\n' +
-    '        </div>\n' +
-    '      </div>\n' +
-    '    </div>\n' +
-    '    <div class="row">\n' +
-    '      <div class="col-xs-12">\n' +
-    '        <register-form></register-form>\n' +
-    '      </div>\n' +
-    '    </div>\n' +
-    '    <br>\n' +
-    '    <div class="row">\n' +
-    '      <div class="col-xs-12">\n' +
-    '        <div class="text-center">\n' +
-    '          <a ui-sref="login">I already have an account</a>\n' +
-    '        </div>\n' +
-    '      </div>\n' +
-    '    </div>\n' +
-    '    <br>\n' +
-    '    <div class="row">\n' +
-    '      <div class="col-xs-12">\n' +
-    '        By signing up, you agree to our <a href="#">Terms</a> and that you have read our <a href="#">Privacy Policy</a>.\n' +
-    '      </div>\n' +
-    '    </div>\n' +
-    '  </div>\n' +
-    '</div>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('app.partials');
-} catch (e) {
-  module = angular.module('app.partials', []);
-}
-module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('./views/app/pages/reset-password/reset-password.page.html',
-    '<div class="login-box">\n' +
-    '  <div class="login-logo">\n' +
-    '    <a ui-sref="login"><b>Admin</b>LTE</a>\n' +
-    '  </div>\n' +
-    '  <div class="login-box-body">\n' +
-    '    <div class="row-">\n' +
-    '      <div class="col-xs-12">\n' +
-    '        <div class="text-center">\n' +
-    '          <h3>Reset Password</h3>\n' +
-    '        </div>\n' +
-    '      </div>\n' +
-    '    </div>\n' +
-    '    <div class="row">\n' +
-    '      <div class="col-xs-12">\n' +
-    '        <reset-password></reset-password>\n' +
-    '      </div>\n' +
-    '    </div>\n' +
-    '  </div>\n' +
-    '</div>\n' +
-    '');
-}]);
-})();
-
-(function(module) {
-try {
-  module = angular.module('app.partials');
-} catch (e) {
-  module = angular.module('app.partials', []);
-}
-module.run(['$templateCache', function($templateCache) {
-  $templateCache.put('./views/app/pages/user-verification/user-verification.page.html',
-    '<div class="login-box">\n' +
-    '  <div class="login-logo">\n' +
-    '    <a ui-sref="login"><b>Admin</b>LTE</a>\n' +
-    '  </div>\n' +
-    '  <div class="login-box-body">\n' +
-    '    <user-verification></user-verification>\n' +
-    '  </div>\n' +
-    '</div>\n' +
-    '');
-}]);
-})();
-
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -103362,9 +103430,9 @@ module.run(['$templateCache', function($templateCache) {
 
 	__webpack_require__(17);
 
-	__webpack_require__(46);
+	__webpack_require__(47);
 
-	__webpack_require__(49);
+	__webpack_require__(50);
 
 /***/ },
 /* 1 */
@@ -103715,6 +103783,13 @@ module.run(['$templateCache', function($templateCache) {
 	    params: {
 	      alerts: null,
 	      permissionId: null
+	    }
+	  }).state('app.create_post', {
+	    url: '/create-post',
+	    views: {
+	      'main@app': {
+	        templateUrl: getView('create_post')
+	      }
 	    }
 	  }).state('app.userrolesadd', {
 	    url: '/user-roles-add',
@@ -104075,66 +104150,119 @@ module.run(['$templateCache', function($templateCache) {
 
 	'use strict';
 
-	var _tablesSimple = __webpack_require__(18);
+	var _create_post_form = __webpack_require__(18);
 
-	var _uiModal = __webpack_require__(19);
+	var _tablesSimple = __webpack_require__(19);
 
-	var _uiTimeline = __webpack_require__(20);
+	var _uiModal = __webpack_require__(20);
 
-	var _uiButtons = __webpack_require__(21);
+	var _uiTimeline = __webpack_require__(21);
 
-	var _uiIcons = __webpack_require__(22);
+	var _uiButtons = __webpack_require__(22);
 
-	var _uiGeneral = __webpack_require__(23);
+	var _uiIcons = __webpack_require__(23);
 
-	var _formsGeneral = __webpack_require__(24);
+	var _uiGeneral = __webpack_require__(24);
 
-	var _chartsChartjs = __webpack_require__(25);
+	var _formsGeneral = __webpack_require__(25);
 
-	var _widgets = __webpack_require__(26);
+	var _chartsChartjs = __webpack_require__(26);
 
-	var _userProfile = __webpack_require__(27);
+	var _widgets = __webpack_require__(27);
 
-	var _userVerification = __webpack_require__(28);
+	var _userProfile = __webpack_require__(28);
 
-	var _comingSoon = __webpack_require__(29);
+	var _userVerification = __webpack_require__(29);
 
-	var _userEdit = __webpack_require__(30);
+	var _comingSoon = __webpack_require__(30);
 
-	var _userPermissionsEdit = __webpack_require__(31);
+	var _userEdit = __webpack_require__(31);
 
-	var _userPermissionsAdd = __webpack_require__(32);
+	var _userPermissionsEdit = __webpack_require__(32);
 
-	var _userPermissions = __webpack_require__(33);
+	var _userPermissionsAdd = __webpack_require__(33);
 
-	var _userRolesEdit = __webpack_require__(34);
+	var _userPermissions = __webpack_require__(34);
 
-	var _userRolesAdd = __webpack_require__(35);
+	var _userRolesEdit = __webpack_require__(35);
 
-	var _userRoles = __webpack_require__(36);
+	var _userRolesAdd = __webpack_require__(36);
 
-	var _userLists = __webpack_require__(37);
+	var _userRoles = __webpack_require__(37);
 
-	var _dashboard = __webpack_require__(38);
+	var _userLists = __webpack_require__(38);
 
-	var _navSidebar = __webpack_require__(39);
+	var _dashboard = __webpack_require__(39);
 
-	var _navHeader = __webpack_require__(40);
+	var _navSidebar = __webpack_require__(40);
 
-	var _loginLoader = __webpack_require__(41);
+	var _navHeader = __webpack_require__(41);
 
-	var _resetPassword = __webpack_require__(42);
+	var _loginLoader = __webpack_require__(42);
 
-	var _forgotPassword = __webpack_require__(43);
+	var _resetPassword = __webpack_require__(43);
 
-	var _loginForm = __webpack_require__(44);
+	var _forgotPassword = __webpack_require__(44);
 
-	var _registerForm = __webpack_require__(45);
+	var _loginForm = __webpack_require__(45);
 
-	angular.module('app.components').component('tablesSimple', _tablesSimple.TablesSimpleComponent).component('uiModal', _uiModal.UiModalComponent).component('uiTimeline', _uiTimeline.UiTimelineComponent).component('uiButtons', _uiButtons.UiButtonsComponent).component('uiIcons', _uiIcons.UiIconsComponent).component('uiGeneral', _uiGeneral.UiGeneralComponent).component('formsGeneral', _formsGeneral.FormsGeneralComponent).component('chartsChartjs', _chartsChartjs.ChartsChartjsComponent).component('widgets', _widgets.WidgetsComponent).component('userProfile', _userProfile.UserProfileComponent).component('userVerification', _userVerification.UserVerificationComponent).component('comingSoon', _comingSoon.ComingSoonComponent).component('userEdit', _userEdit.UserEditComponent).component('userPermissionsEdit', _userPermissionsEdit.UserPermissionsEditComponent).component('userPermissionsAdd', _userPermissionsAdd.UserPermissionsAddComponent).component('userPermissions', _userPermissions.UserPermissionsComponent).component('userRolesEdit', _userRolesEdit.UserRolesEditComponent).component('userRolesAdd', _userRolesAdd.UserRolesAddComponent).component('userRoles', _userRoles.UserRolesComponent).component('userLists', _userLists.UserListsComponent).component('dashboard', _dashboard.DashboardComponent).component('navSidebar', _navSidebar.NavSidebarComponent).component('navHeader', _navHeader.NavHeaderComponent).component('loginLoader', _loginLoader.LoginLoaderComponent).component('resetPassword', _resetPassword.ResetPasswordComponent).component('forgotPassword', _forgotPassword.ForgotPasswordComponent).component('loginForm', _loginForm.LoginFormComponent).component('registerForm', _registerForm.RegisterFormComponent);
+	var _registerForm = __webpack_require__(46);
+
+	angular.module('app.components').component('createPostForm', _create_post_form.CreatePostFormComponent).component('tablesSimple', _tablesSimple.TablesSimpleComponent).component('uiModal', _uiModal.UiModalComponent).component('uiTimeline', _uiTimeline.UiTimelineComponent).component('uiButtons', _uiButtons.UiButtonsComponent).component('uiIcons', _uiIcons.UiIconsComponent).component('uiGeneral', _uiGeneral.UiGeneralComponent).component('formsGeneral', _formsGeneral.FormsGeneralComponent).component('chartsChartjs', _chartsChartjs.ChartsChartjsComponent).component('widgets', _widgets.WidgetsComponent).component('userProfile', _userProfile.UserProfileComponent).component('userVerification', _userVerification.UserVerificationComponent).component('comingSoon', _comingSoon.ComingSoonComponent).component('userEdit', _userEdit.UserEditComponent).component('userPermissionsEdit', _userPermissionsEdit.UserPermissionsEditComponent).component('userPermissionsAdd', _userPermissionsAdd.UserPermissionsAddComponent).component('userPermissions', _userPermissions.UserPermissionsComponent).component('userRolesEdit', _userRolesEdit.UserRolesEditComponent).component('userRolesAdd', _userRolesAdd.UserRolesAddComponent).component('userRoles', _userRoles.UserRolesComponent).component('userLists', _userLists.UserListsComponent).component('dashboard', _dashboard.DashboardComponent).component('navSidebar', _navSidebar.NavSidebarComponent).component('navHeader', _navHeader.NavHeaderComponent).component('loginLoader', _loginLoader.LoginLoaderComponent).component('resetPassword', _resetPassword.ResetPasswordComponent).component('forgotPassword', _forgotPassword.ForgotPasswordComponent).component('loginForm', _loginForm.LoginFormComponent).component('registerForm', _registerForm.RegisterFormComponent);
 
 /***/ },
 /* 18 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var CreatePostFormController = function () {
+	    CreatePostFormController.$inject = ["API", "ToastService"];
+	    function CreatePostFormController(API, ToastService) {
+	        'ngInject';
+
+	        _classCallCheck(this, CreatePostFormController);
+
+	        this.API = API;
+	        this.ToastService = ToastService;
+	    }
+
+	    _createClass(CreatePostFormController, [{
+	        key: 'submit',
+	        value: function submit() {
+	            var _this = this;
+
+	            var data = {
+	                name: this.name,
+	                topic: this.topic
+	            };
+
+	            this.API.all('posts').post(data).then(function (response) {
+	                _this.ToastService.show('Post added successfully');
+	            });
+	        }
+	    }]);
+
+	    return CreatePostFormController;
+	}();
+
+	var CreatePostFormComponent = exports.CreatePostFormComponent = {
+	    templateUrl: './views/app/components/create_post_form/create_post_form.component.html',
+	    controller: CreatePostFormController,
+	    controllerAs: 'vm',
+	    bindings: {}
+	};
+
+/***/ },
+/* 19 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -104172,7 +104300,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 19 */
+/* 20 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -104379,7 +104507,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 20 */
+/* 21 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -104417,7 +104545,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 21 */
+/* 22 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -104455,7 +104583,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 22 */
+/* 23 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -104493,7 +104621,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 23 */
+/* 24 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -104531,7 +104659,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 24 */
+/* 25 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -104569,7 +104697,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 25 */
+/* 26 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -104652,7 +104780,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 26 */
+/* 27 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -104690,7 +104818,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 27 */
+/* 28 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -104780,7 +104908,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 28 */
+/* 29 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -104825,7 +104953,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 29 */
+/* 30 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -104863,7 +104991,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 30 */
+/* 31 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -104958,7 +105086,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 31 */
+/* 32 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -105031,7 +105159,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 32 */
+/* 33 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -105104,7 +105232,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 33 */
+/* 34 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -105196,7 +105324,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 34 */
+/* 35 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -105290,7 +105418,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 35 */
+/* 36 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -105363,7 +105491,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 36 */
+/* 37 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -105455,7 +105583,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 37 */
+/* 38 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -105547,7 +105675,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 38 */
+/* 39 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -105582,7 +105710,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 39 */
+/* 40 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -105626,7 +105754,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 40 */
+/* 41 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -105669,7 +105797,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 41 */
+/* 42 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -105709,7 +105837,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 42 */
+/* 43 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -105801,7 +105929,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 43 */
+/* 44 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -105863,7 +105991,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 44 */
+/* 45 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -105959,7 +106087,7 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 45 */
+/* 46 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -106040,19 +106168,19 @@ module.run(['$templateCache', function($templateCache) {
 	};
 
 /***/ },
-/* 46 */
+/* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _routeBodyclass = __webpack_require__(47);
+	var _routeBodyclass = __webpack_require__(48);
 
-	var _passwordVerify = __webpack_require__(48);
+	var _passwordVerify = __webpack_require__(49);
 
 	angular.module('app.components').directive('routeBodyclass', _routeBodyclass.RouteBodyClassComponent).directive('passwordVerify', _passwordVerify.PasswordVerifyClassComponent);
 
 /***/ },
-/* 47 */
+/* 48 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -106088,7 +106216,7 @@ module.run(['$templateCache', function($templateCache) {
 	var RouteBodyClassComponent = exports.RouteBodyClassComponent = routeBodyClass;
 
 /***/ },
-/* 48 */
+/* 49 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -106133,19 +106261,19 @@ module.run(['$templateCache', function($templateCache) {
 	var PasswordVerifyClassComponent = exports.PasswordVerifyClassComponent = passwordVerifyClass;
 
 /***/ },
-/* 49 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _context = __webpack_require__(50);
+	var _context = __webpack_require__(51);
 
-	var _API = __webpack_require__(51);
+	var _API = __webpack_require__(52);
 
 	angular.module('app.services').service('ContextService', _context.ContextService).service('API', _API.APIService);
 
 /***/ },
-/* 50 */
+/* 51 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -106197,7 +106325,7 @@ module.run(['$templateCache', function($templateCache) {
 	}();
 
 /***/ },
-/* 51 */
+/* 52 */
 /***/ function(module, exports) {
 
 	'use strict';

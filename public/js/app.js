@@ -56,9 +56,9 @@
 
 	__webpack_require__(17);
 
-	__webpack_require__(46);
+	__webpack_require__(47);
 
-	__webpack_require__(49);
+	__webpack_require__(50);
 
 /***/ },
 /* 1 */
@@ -409,6 +409,13 @@
 	    params: {
 	      alerts: null,
 	      permissionId: null
+	    }
+	  }).state('app.create_post', {
+	    url: '/create-post',
+	    views: {
+	      'main@app': {
+	        templateUrl: getView('create_post')
+	      }
 	    }
 	  }).state('app.userrolesadd', {
 	    url: '/user-roles-add',
@@ -769,66 +776,119 @@
 
 	'use strict';
 
-	var _tablesSimple = __webpack_require__(18);
+	var _create_post_form = __webpack_require__(18);
 
-	var _uiModal = __webpack_require__(19);
+	var _tablesSimple = __webpack_require__(19);
 
-	var _uiTimeline = __webpack_require__(20);
+	var _uiModal = __webpack_require__(20);
 
-	var _uiButtons = __webpack_require__(21);
+	var _uiTimeline = __webpack_require__(21);
 
-	var _uiIcons = __webpack_require__(22);
+	var _uiButtons = __webpack_require__(22);
 
-	var _uiGeneral = __webpack_require__(23);
+	var _uiIcons = __webpack_require__(23);
 
-	var _formsGeneral = __webpack_require__(24);
+	var _uiGeneral = __webpack_require__(24);
 
-	var _chartsChartjs = __webpack_require__(25);
+	var _formsGeneral = __webpack_require__(25);
 
-	var _widgets = __webpack_require__(26);
+	var _chartsChartjs = __webpack_require__(26);
 
-	var _userProfile = __webpack_require__(27);
+	var _widgets = __webpack_require__(27);
 
-	var _userVerification = __webpack_require__(28);
+	var _userProfile = __webpack_require__(28);
 
-	var _comingSoon = __webpack_require__(29);
+	var _userVerification = __webpack_require__(29);
 
-	var _userEdit = __webpack_require__(30);
+	var _comingSoon = __webpack_require__(30);
 
-	var _userPermissionsEdit = __webpack_require__(31);
+	var _userEdit = __webpack_require__(31);
 
-	var _userPermissionsAdd = __webpack_require__(32);
+	var _userPermissionsEdit = __webpack_require__(32);
 
-	var _userPermissions = __webpack_require__(33);
+	var _userPermissionsAdd = __webpack_require__(33);
 
-	var _userRolesEdit = __webpack_require__(34);
+	var _userPermissions = __webpack_require__(34);
 
-	var _userRolesAdd = __webpack_require__(35);
+	var _userRolesEdit = __webpack_require__(35);
 
-	var _userRoles = __webpack_require__(36);
+	var _userRolesAdd = __webpack_require__(36);
 
-	var _userLists = __webpack_require__(37);
+	var _userRoles = __webpack_require__(37);
 
-	var _dashboard = __webpack_require__(38);
+	var _userLists = __webpack_require__(38);
 
-	var _navSidebar = __webpack_require__(39);
+	var _dashboard = __webpack_require__(39);
 
-	var _navHeader = __webpack_require__(40);
+	var _navSidebar = __webpack_require__(40);
 
-	var _loginLoader = __webpack_require__(41);
+	var _navHeader = __webpack_require__(41);
 
-	var _resetPassword = __webpack_require__(42);
+	var _loginLoader = __webpack_require__(42);
 
-	var _forgotPassword = __webpack_require__(43);
+	var _resetPassword = __webpack_require__(43);
 
-	var _loginForm = __webpack_require__(44);
+	var _forgotPassword = __webpack_require__(44);
 
-	var _registerForm = __webpack_require__(45);
+	var _loginForm = __webpack_require__(45);
 
-	angular.module('app.components').component('tablesSimple', _tablesSimple.TablesSimpleComponent).component('uiModal', _uiModal.UiModalComponent).component('uiTimeline', _uiTimeline.UiTimelineComponent).component('uiButtons', _uiButtons.UiButtonsComponent).component('uiIcons', _uiIcons.UiIconsComponent).component('uiGeneral', _uiGeneral.UiGeneralComponent).component('formsGeneral', _formsGeneral.FormsGeneralComponent).component('chartsChartjs', _chartsChartjs.ChartsChartjsComponent).component('widgets', _widgets.WidgetsComponent).component('userProfile', _userProfile.UserProfileComponent).component('userVerification', _userVerification.UserVerificationComponent).component('comingSoon', _comingSoon.ComingSoonComponent).component('userEdit', _userEdit.UserEditComponent).component('userPermissionsEdit', _userPermissionsEdit.UserPermissionsEditComponent).component('userPermissionsAdd', _userPermissionsAdd.UserPermissionsAddComponent).component('userPermissions', _userPermissions.UserPermissionsComponent).component('userRolesEdit', _userRolesEdit.UserRolesEditComponent).component('userRolesAdd', _userRolesAdd.UserRolesAddComponent).component('userRoles', _userRoles.UserRolesComponent).component('userLists', _userLists.UserListsComponent).component('dashboard', _dashboard.DashboardComponent).component('navSidebar', _navSidebar.NavSidebarComponent).component('navHeader', _navHeader.NavHeaderComponent).component('loginLoader', _loginLoader.LoginLoaderComponent).component('resetPassword', _resetPassword.ResetPasswordComponent).component('forgotPassword', _forgotPassword.ForgotPasswordComponent).component('loginForm', _loginForm.LoginFormComponent).component('registerForm', _registerForm.RegisterFormComponent);
+	var _registerForm = __webpack_require__(46);
+
+	angular.module('app.components').component('createPostForm', _create_post_form.CreatePostFormComponent).component('tablesSimple', _tablesSimple.TablesSimpleComponent).component('uiModal', _uiModal.UiModalComponent).component('uiTimeline', _uiTimeline.UiTimelineComponent).component('uiButtons', _uiButtons.UiButtonsComponent).component('uiIcons', _uiIcons.UiIconsComponent).component('uiGeneral', _uiGeneral.UiGeneralComponent).component('formsGeneral', _formsGeneral.FormsGeneralComponent).component('chartsChartjs', _chartsChartjs.ChartsChartjsComponent).component('widgets', _widgets.WidgetsComponent).component('userProfile', _userProfile.UserProfileComponent).component('userVerification', _userVerification.UserVerificationComponent).component('comingSoon', _comingSoon.ComingSoonComponent).component('userEdit', _userEdit.UserEditComponent).component('userPermissionsEdit', _userPermissionsEdit.UserPermissionsEditComponent).component('userPermissionsAdd', _userPermissionsAdd.UserPermissionsAddComponent).component('userPermissions', _userPermissions.UserPermissionsComponent).component('userRolesEdit', _userRolesEdit.UserRolesEditComponent).component('userRolesAdd', _userRolesAdd.UserRolesAddComponent).component('userRoles', _userRoles.UserRolesComponent).component('userLists', _userLists.UserListsComponent).component('dashboard', _dashboard.DashboardComponent).component('navSidebar', _navSidebar.NavSidebarComponent).component('navHeader', _navHeader.NavHeaderComponent).component('loginLoader', _loginLoader.LoginLoaderComponent).component('resetPassword', _resetPassword.ResetPasswordComponent).component('forgotPassword', _forgotPassword.ForgotPasswordComponent).component('loginForm', _loginForm.LoginFormComponent).component('registerForm', _registerForm.RegisterFormComponent);
 
 /***/ },
 /* 18 */
+/***/ function(module, exports) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	var CreatePostFormController = function () {
+	    CreatePostFormController.$inject = ["API", "ToastService"];
+	    function CreatePostFormController(API, ToastService) {
+	        'ngInject';
+
+	        _classCallCheck(this, CreatePostFormController);
+
+	        this.API = API;
+	        this.ToastService = ToastService;
+	    }
+
+	    _createClass(CreatePostFormController, [{
+	        key: 'submit',
+	        value: function submit() {
+	            var _this = this;
+
+	            var data = {
+	                name: this.name,
+	                topic: this.topic
+	            };
+
+	            this.API.all('posts').post(data).then(function (response) {
+	                _this.ToastService.show('Post added successfully');
+	            });
+	        }
+	    }]);
+
+	    return CreatePostFormController;
+	}();
+
+	var CreatePostFormComponent = exports.CreatePostFormComponent = {
+	    templateUrl: './views/app/components/create_post_form/create_post_form.component.html',
+	    controller: CreatePostFormController,
+	    controllerAs: 'vm',
+	    bindings: {}
+	};
+
+/***/ },
+/* 19 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -866,7 +926,7 @@
 	};
 
 /***/ },
-/* 19 */
+/* 20 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1073,7 +1133,7 @@
 	};
 
 /***/ },
-/* 20 */
+/* 21 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1111,7 +1171,7 @@
 	};
 
 /***/ },
-/* 21 */
+/* 22 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1149,7 +1209,7 @@
 	};
 
 /***/ },
-/* 22 */
+/* 23 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1187,7 +1247,7 @@
 	};
 
 /***/ },
-/* 23 */
+/* 24 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1225,7 +1285,7 @@
 	};
 
 /***/ },
-/* 24 */
+/* 25 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1263,7 +1323,7 @@
 	};
 
 /***/ },
-/* 25 */
+/* 26 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1346,7 +1406,7 @@
 	};
 
 /***/ },
-/* 26 */
+/* 27 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1384,7 +1444,7 @@
 	};
 
 /***/ },
-/* 27 */
+/* 28 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1474,7 +1534,7 @@
 	};
 
 /***/ },
-/* 28 */
+/* 29 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1519,7 +1579,7 @@
 	};
 
 /***/ },
-/* 29 */
+/* 30 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1557,7 +1617,7 @@
 	};
 
 /***/ },
-/* 30 */
+/* 31 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1652,7 +1712,7 @@
 	};
 
 /***/ },
-/* 31 */
+/* 32 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1725,7 +1785,7 @@
 	};
 
 /***/ },
-/* 32 */
+/* 33 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1798,7 +1858,7 @@
 	};
 
 /***/ },
-/* 33 */
+/* 34 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1890,7 +1950,7 @@
 	};
 
 /***/ },
-/* 34 */
+/* 35 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1984,7 +2044,7 @@
 	};
 
 /***/ },
-/* 35 */
+/* 36 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2057,7 +2117,7 @@
 	};
 
 /***/ },
-/* 36 */
+/* 37 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2149,7 +2209,7 @@
 	};
 
 /***/ },
-/* 37 */
+/* 38 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2241,7 +2301,7 @@
 	};
 
 /***/ },
-/* 38 */
+/* 39 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2276,7 +2336,7 @@
 	};
 
 /***/ },
-/* 39 */
+/* 40 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2320,7 +2380,7 @@
 	};
 
 /***/ },
-/* 40 */
+/* 41 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2363,7 +2423,7 @@
 	};
 
 /***/ },
-/* 41 */
+/* 42 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2403,7 +2463,7 @@
 	};
 
 /***/ },
-/* 42 */
+/* 43 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2495,7 +2555,7 @@
 	};
 
 /***/ },
-/* 43 */
+/* 44 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2557,7 +2617,7 @@
 	};
 
 /***/ },
-/* 44 */
+/* 45 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2653,7 +2713,7 @@
 	};
 
 /***/ },
-/* 45 */
+/* 46 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2734,19 +2794,19 @@
 	};
 
 /***/ },
-/* 46 */
+/* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _routeBodyclass = __webpack_require__(47);
+	var _routeBodyclass = __webpack_require__(48);
 
-	var _passwordVerify = __webpack_require__(48);
+	var _passwordVerify = __webpack_require__(49);
 
 	angular.module('app.components').directive('routeBodyclass', _routeBodyclass.RouteBodyClassComponent).directive('passwordVerify', _passwordVerify.PasswordVerifyClassComponent);
 
 /***/ },
-/* 47 */
+/* 48 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2782,7 +2842,7 @@
 	var RouteBodyClassComponent = exports.RouteBodyClassComponent = routeBodyClass;
 
 /***/ },
-/* 48 */
+/* 49 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2827,19 +2887,19 @@
 	var PasswordVerifyClassComponent = exports.PasswordVerifyClassComponent = passwordVerifyClass;
 
 /***/ },
-/* 49 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var _context = __webpack_require__(50);
+	var _context = __webpack_require__(51);
 
-	var _API = __webpack_require__(51);
+	var _API = __webpack_require__(52);
 
 	angular.module('app.services').service('ContextService', _context.ContextService).service('API', _API.APIService);
 
 /***/ },
-/* 50 */
+/* 51 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -2891,7 +2951,7 @@
 	}();
 
 /***/ },
-/* 51 */
+/* 52 */
 /***/ function(module, exports) {
 
 	'use strict';

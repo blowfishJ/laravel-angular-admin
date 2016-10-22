@@ -1,3 +1,4 @@
+import {CreatePostFormComponent} from './app/components/create_post_form/create_post_form.component'
 import { TablesSimpleComponent } from './app/components/tables-simple/tables-simple.component'
 import { UiModalComponent } from './app/components/ui-modal/ui-modal.component'
 import { UiTimelineComponent } from './app/components/ui-timeline/ui-timeline.component'
@@ -27,7 +28,10 @@ import { ForgotPasswordComponent } from './app/components/forgot-password/forgot
 import { LoginFormComponent } from './app/components/login-form/login-form.component'
 import { RegisterFormComponent } from './app/components/register-form/register-form.component'
 
+
+
 angular.module('app.components')
+	.component('createPostForm', CreatePostFormComponent)
   .component('tablesSimple', TablesSimpleComponent)
   .component('uiModal', UiModalComponent)
   .component('uiTimeline', UiTimelineComponent)

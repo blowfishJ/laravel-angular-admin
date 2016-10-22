@@ -18,6 +18,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('auth/{provider}', ['uses' => 'Auth\AuthController@redirectToProvider']);
     Route::get('auth/{provider}/callback', ['uses' => 'Auth\AuthController@handleProviderCallback']);
     Route::get('/api/authenticate/user', 'Auth\AuthController@getAuthenticatedUser');
+    Route::post('posts', 'CreatePostController@create');
 });
 
 $api->group(['middleware' => ['api']], function ($api) {
@@ -37,3 +38,4 @@ $api->group(['middleware' => ['api', 'api.auth']], function ($api) {
 $api->group(['middleware' => ['api', 'api.auth', 'role:admin.super|admin.user']], function ($api) {
     $api->controller('users', 'UserController');
 });
+
